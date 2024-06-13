@@ -1,0 +1,509 @@
+<!-- <div class="card-container">
+    <div class="card" *ngFor="let card of cards">
+      <img [src]="card.imageUrl" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">{{ card.title }}</h5>
+        <p class="card-text">{{ card.content }}</p>
+      </div>
+    </div>
+  </div>
+  
+
+   -->
+<!-- 
+   <div class="card-container">
+    <div class="card" *ngFor="let card of cards" [ngStyle]="{'background-color': card.color}">
+      <img [src]="card.imageUrl" alt="Card image" class="card-img">
+      <div class="card-body">
+        <h5 class="card-title">{{ card.title }}</h5>
+        <p class="card-text">{{ card.content }}</p>
+        <button mat-raised-button color="primary">Action</button>
+      </div>
+    </div>
+  </div>
+   -->
+
+
+   <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section-header {
+            background-color: #ffcc00;
+            padding: 10px;
+            font-size: 1.5em;
+            color: #fff;
+            text-align: center;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            cursor: pointer;
+        }
+        .card-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .button-card {
+            display: inline-block;
+            padding: 10px;
+            color: #007bff;
+            text-decoration: none;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .section-header-blue {
+            background-color: #00bfff;
+        }
+        .section-header-purple {
+            background-color: #800080;
+        }
+        .section-header-green {
+            background-color: #32cd32;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> -->
+        <!-- Power Supply Section -->
+        <!-- <div class="section">
+            <div class="section-header">
+                Power Supply
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>SubStation Battery Parameter</h3>
+                    <p>Voltage: 120.51 DC V</p>
+                    <p>Current: 0.53 DC A</p>
+                    <p>Battery Status: CHARGING</p>
+                </div>
+                <div class="card">
+                    <h3>UPS Parameter</h3>
+                    <p>Voltage: 13.03 DC V</p>
+                    <p>Battery Status: 76.50 %</p>
+                </div>
+                <div class="card">
+                    <h3>Station Transformer</h3>
+                    <p>Voltage: 11.29 kV</p>
+                    <p>Power: 0.30 kW</p>
+                    <p>Status: ON</p>
+                </div>
+                <div class="card">
+                    <h3>Capacitor Bank</h3>
+                    <p>Total Capacitor Bank: 1</p>
+                    <p>Capacitor Bank with "ON" Status: 1</p>
+                    <p>Total Capacitor Bank (kVAR): 484.80</p>
+                    <p>Total Incomer (kVAR): NA</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Transformer Health Section -->
+        <!-- <div class="section">
+            <div class="section-header section-header-blue">
+                Transformer Health
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>Analog Health Parameters</h3>
+                    <p>Oil Temp: 48.00 °C</p>
+                    <p>Winding Temp: 48.00 °C</p>
+                    <p>OLTC TPI: 3 No. | 11.261 kV</p>
+                </div>
+                <div class="card">
+                    <h3>Alarm Status</h3>
+                    <p>OTI: NORMAL</p>
+                    <p>WTI: NORMAL</p>
+                    <p>Low Oil Level: NORMAL</p>
+                </div>
+                <div class="card">
+                    <h3>Trip Status</h3>
+                    <p>OTI: NORMAL</p>
+                    <p>WTI: NORMAL</p>
+                    <p>Buchholz: NORMAL</p>
+                    <p>Main PRV: NORMAL</p>
+                    <p>OLTC PRV: NORMAL</p>
+                    <p>OLTC OSR: NORMAL</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Load Analysis Section -->
+        <!-- <div class="section">
+            <div class="section-header section-header-purple">
+                Load Analysis (MW)
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>66 kV Tr. (Net Drawl)</h3>
+                    <p>4.05</p>
+                </div>
+                <div class="card">
+                    <h3>11 kV Incomer (Net Drawl)</h3>
+                    <p>4.02</p>
+                </div>
+                <div class="card">
+                    <h3>11 kV Outgoing (Net Drawl)</h3>
+                    <p>4.01</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Today's Net Energy Analysis Section -->
+        <!-- <div class="section">
+            <div class="section-header section-header-green">
+                Today's Net Energy Analysis (MWh)
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>66 kV Line (Net Drawl)</h3>
+                    <p>10.60</p>
+                </div>
+                <div class="card">
+                    <h3>11 kV Incomer (Net Drawl)</h3>
+                    <p>10.43</p>
+                </div>
+                <div class="card">
+                    <h3>11 kV Outgoing (Net Drawl)</h3>
+                    <p>10.41</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Efficiency Analysis Section -->
+        <!-- <div class="section">
+            <div class="section-header section-header-blue">
+                Efficiency Analysis
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>TR Loss</h3>
+                    <p>1.64 %</p>
+                </div>
+                <div class="card">
+                    <h3>11 kV Bus Loss</h3>
+                    <p>0.18 %</p>
+                </div>
+                <div class="card">
+                    <h3>SS Loss</h3>
+                    <p>1.75 %</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Interruption Analysis Section -->
+        <!-- <div class="section">
+            <div class="section-header section-header-purple">
+                Interruption Analysis
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>66kV</h3>
+                    <p>Count (Nos.): 0</p>
+                    <p>Uptime (%): 100</p>
+                </div>
+                <div class="card">
+                    <h3>11kV Incomer</h3>
+                    <p>Count (Nos.): 0</p>
+                    <p>Uptime (%): 100</p>
+                </div>
+                <div class="card">
+                    <h3>11kV Outgoing</h3>
+                    <p>Count (Nos.): 3</p>
+                    <p>Uptime (%): 99.91</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section-header {
+            padding: 10px;
+            font-size: 1.5em;
+            color: #fff;
+            text-align: center;
+        }
+        .section-header-yellow {
+            background-color: #ffcc00;
+        }
+        .section-header-blue {
+            background-color: #00bfff;
+        }
+        .section-header-purple {
+            background-color: #800080;
+        }
+        .card-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            flex: 1;
+            text-align: left;
+            position: relative;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card p {
+            margin: 5px 0;
+        }
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            color: #fff;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        .status-green {
+            background-color: #28a745;
+        }
+        .status-red {
+            background-color: #dc3545;
+        }
+        .horizontal-line {
+            border-top: 1px solid #ddd;
+            margin: 10px 0;
+        }
+        .dropdown-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dropdown {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Power Supply Section -->
+        <div class="section">
+            <div class="section-header section-header-yellow">
+                Power Supply
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>SubStation Battery Parameter</h3>
+                    <p>Voltage: 120.51 DC V</p>
+                    <div class="horizontal-line"></div>
+                    <p>Current: 0.53 DC A</p>
+                    <div class="horizontal-line"></div>
+                    <p>Battery Status: <span class="status status-green">CHARGING</span></p>
+                </div>
+                <div class="card">
+                    <h3>UPS Parameter</h3>
+                    <p>Voltage: 13.03 DC V</p>
+                    <div class="horizontal-line"></div>
+                    <p>Battery Status: 76.50 %</p>
+                </div>
+                <div class="card">
+                    <div class="dropdown-container">
+                        <h3>Station Transformer</h3>
+                        <select class="dropdown">
+                            <option>11kV STATION TR</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <p>Voltage: 11.29 kV</p>
+                    <div class="horizontal-line"></div>
+                    <p>Power: 0.30 kW</p>
+                    <div class="horizontal-line"></div>
+                    <p>Status: <span class="status status-green">ON</span></p>
+                </div>
+                <div class="card">
+                    <h3>Capacitor Bank</h3>
+                    <p>Total Capacitor Bank: 1</p>
+                    <div class="horizontal-line"></div>
+                    <p>Capacitor Bank with "ON" Status: 1</p>
+                    <div class="horizontal-line"></div>
+                    <p>Total Capacitor Bank (kVAR): 484.80</p>
+                    <div class="horizontal-line"></div>
+                    <p>Total Incomer (kVAR): NA</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transformer Health Section -->
+        <div class="section">
+            <div class="section-header section-header-blue">
+                Transformer Health
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>Analog Health Parameters</h3>
+                    <p>Oil Temp: 48.00 °C</p>
+                    <div class="horizontal-line"></div>
+                    <p>Winding Temp: 48.00 °C</p>
+                    <div class="horizontal-line"></div>
+                    <p>OLTC TPI: 3 No. | 11.261 kV</p>
+                </div>
+                <div class="card">
+                    <h3>Alarm Status</h3>
+                    <p>OTI: <span class="status status-green">NORMAL</span></p>
+                    <div class="horizontal-line"></div>
+                    <p>WTI: <span class="status status-green">NORMAL</span></p>
+                    <div class="horizontal-line"></div>
+                    <p>Low Oil Level: <span class="status status-green">NORMAL</span></p>
+                </div>
+                <div class="card">
+                    <h3>Trip Status</h3>
+                    <p>OTI: <span class="status status-green">NORMAL</span></p>
+                    <div class="horizontal-line"></div>
+                    <p>WTI: <span class="status status-green">NORMAL</span></p>
+                    <div class="horizontal-line"></div>
+                    <p>Buchholz: <span class="status status-green">NORMAL</span></p>
+                    <div class="horizontal-line"></div>
+                    <p>Main PRV: <span class="status status-green">NORMAL</span></p>
+                    <div class="horizontal-line"></div>
+                    <p>OLTC PRV: <span class="status status-green">NORMAL</span></p>
+                    <div class="horizontal-line"></div>
+                    <p>OLTC OSR: <span class="status status-green">NORMAL</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load Analysis Section -->
+        <div class="section">
+            <div class="section-header section-header-purple">
+                Load Analysis (MW)
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>66 kV Tr. (Net Drawl)</h3>
+                    <p>4.05</p>
+                </div>
+                <div class="card">
+                    <h3>11 kV Incomer (Net Drawl)</h3>
+                    <p>4.02</p>
+                </div>
+                <div class="card">
+                    <h3>11 kV Outgoing (Net Drawl)</h3>
+                    <p>4.01</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Today's Net Energy Analysis Section -->
+        <div class="section">
+            <div class="section-header section-header-green">
+                Today's Net Energy Analysis (MWh)
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>66 kV Line (Net Drawl)</h3>
+                    <p>10.60</p>
+                </div>
+                <div class="card">
+                    <h3>11 kV Incomer (Net Drawl)</h3>
+                    <p>10.43</p>
+                </div>
+                <div class="card">
+                    <h3>11 kV Outgoing (Net Drawl)</h3>
+                    <p>10.41</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Efficiency Analysis Section -->
+        <div class="section">
+            <div class="section-header section-header-blue">
+                Efficiency Analysis
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>TR Loss</h3>
+                    <p>1.64 %</p>
+                </div>
+                <div class="card">
+                    <h3>11 kV Bus Loss</h3>
+                    <p>0.18 %</p>
+                </div>
+                <div class="card">
+                    <h3>SS Loss</h3>
+                    <p>1.75 %</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interruption Analysis Section -->
+        <div class="section">
+            <div class="section-header section-header-purple">
+                Interruption Analysis
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <h3>66kV</h3>
+                    <p>Count (Nos.): 0</p>
+                    <div class="horizontal-line"></div>
+                    <p>Uptime (%): 100</p>
+                </div>
+                <div class="card">
+                    <h3>11kV Incomer</h3>
+                    <p>Count (Nos.): 0</p>
+                    <div class="horizontal-line"></div>
+                    <p>Uptime (%): 100</p>
+                </div>
+                <div class="card">
+                    <h3>11kV Outgoing</h3>
+                    <p>Count (Nos.): 3</p>
+                    <div class="horizontal-line"></div>
+                    <p>Uptime (%): 99.91</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
